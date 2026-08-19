@@ -1,0 +1,44 @@
+==================================================
+  PROYECTO: PÁGINA WEB BÁSQUETBOL - HISTORIA Y DATOS
+  Programa: Análisis y Desarrollo de Software (ADSO)
+  Aprendiz SENA - Nivel Principiante
+==================================================
+
+1. DESCRIPCIÓN DEL PROYECTO
+---------------------------
+Este proyecto es una página web informativa sobre el baloncesto. 
+Incluye su historia, una galería de fotos en carrusel, un formulario de contacto, 
+información de posiciones y leyendas del deporte, e información sobre el baloncesto en Colombia.
+
+
+2. TECNOLOGÍAS UTILIZADAS
+-------------------------
+- HTML5: Para la estructura y contenido del sitio web.
+- CSS3: Para los estilos visuales, animaciones (@keyframes) y efectos hover.
+- Bootstrap 5: Para el diseño adaptativo (celular, tablet y PC) y componentes como la barra de navegación y el carrusel.
+
+
+3. ARCHIVOS DEL PROYECTO
+------------------------
+- index.html: La página principal.
+- estilos.css: Mis estilos personalizados.
+- bootstrap.min.css y bootstrap.bundle.min.js: Archivos de Bootstrap para el diseño y funciones.
+- videofondo_jVSSOeGe.mp4: El video que va de fondo.
+- Carpeta "imagenes": Contiene el icono y las fotos de la página.
+
+
+4. INSTRUCCIONES DE EJECUCIÓN
+-----------------------------
+1. Descargar o descomprimir la carpeta del proyecto.
+2. Asegurarse de mantener todos los archivos y la carpeta "imagenes" juntos en la misma carpeta.
+3. Dar doble clic sobre el archivo "index.html" para abrirlo en cualquier navegador (Chrome, Edge, Firefox).
+
+
+5. CARACTERÍSTICAS PRINCIPALES
+------------------------------
+- Video en alta definición fijo como fondo de la página.
+- Barra de navegación superior fija.
+- Carrusel de imágenes automático.
+- Formulario básico para escribir Nombre y Correo.
+- Indicador flotante que avisa si estás en celular, tablet o computador.
+- Diseño adaptativo que se acomoda a cualquier pantalla.

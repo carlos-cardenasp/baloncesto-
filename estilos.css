@@ -1,0 +1,134 @@
+/* Video de fondo fijo en toda la pantalla */
+.video-background {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  object-fit: cover;
+  z-index: -1; /* Lo manda detrás de todo */
+}
+
+/* Estilos generales de la página */
+body {
+  background-color: #303097;
+  color: #ffffff;
+  font-family: Arial, sans-serif;
+  position: relative;
+}
+
+/* Encabezado con degradado naranja */
+.header-baloncesto {
+  background: linear-gradient(135deg, rgb(205, 54, 12), rgb(252, 115, 35));
+  color: antiquewhite;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
+}
+
+/* Animación para que el título brille y crezca suavemente */
+@keyframes efectoBrillo {
+  0% { opacity: 0.85; transform: scale(1); }
+  50% { opacity: 1; transform: scale(1.01); }
+  100% { opacity: 0.85; transform: scale(1); }
+}
+
+.animacion-titulo {
+  animation: efectoBrillo 4s infinite ease-in-out;
+}
+
+/* Efecto suave al pasar el mouse por el botón */
+.btn-interactivo {
+  transition: all 0.3s ease;
+}
+
+.btn-interactivo:hover {
+  background-color: #fc7323 !important;
+  border-color: #fc7323 !important;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Efecto de zoom y brillo en imágenes al pasar el mouse */
+.img-fluid {
+  transition: transform 0.4s ease, filter 0.4s ease, box-shadow 0.4s ease;
+}
+
+.img-fluid:hover {
+  transform: scale(1.03);
+  filter: brightness(1.1);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4);
+}
+
+/* Pie de página en varias columnas (Flexbox) */
+.pie-pagina {
+  background-color: #1b1b1b; 
+  color: white; 
+  padding: 20px; 
+  border-radius: 10px;
+  display: flex; 
+  justify-content: space-around; 
+  flex-wrap: wrap;
+  gap: 15px;
+  border-top: 3px solid #fc7323;
+}
+
+.columna {
+  text-align: center;
+}
+
+.columna h2 {
+  margin: 0 0 5px 0; 
+  color: #fc7323; 
+}
+
+.columna p, 
+.columna a {
+  color: white; 
+  text-decoration: none; 
+}
+
+.columna a:hover {
+  color: #fc7323; 
+  text-decoration: underline;
+}
+
+/* Indicador flotante según el tamaño de la pantalla */
+.indicador {
+  position: fixed;
+  top: 70px;
+  right: 10px;
+  z-index: 1000;
+  background-color: rgba(51, 51, 51, 0.9);
+  color: #fff;
+  padding: 8px 12px;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+  border: 1px solid #555;
+  font-size: 14px;
+}
+      
+.indicador samp {
+  display: none;
+  font-weight: bold;
+}
+
+/* Muestra solo el texto según el tamaño del dispositivo */
+@media (min-width: 900px) {
+  .indicador .computador { display: inline; }
+}
+
+@media (max-width: 899px) and (min-width: 600px) {
+  .indicador .tablet { display: inline; }
+}
+
+@media (max-width: 599px) {
+  .indicador .celular { display: inline; }
+}
+
+/* Espacio superior para acomodar carrusel y formulario */
+.col-122{
+  margin-top: 90px;
+}
+
+.col-123{
+  margin-top: 80px;
+}

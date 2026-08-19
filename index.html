@@ -1,0 +1,190 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Baloncesto - Historia y Datos</title>
+    <!-- Trae los estilos ya hechos de Bootstrap -->
+    <link rel="stylesheet" href="./bootstrap.min.css">
+    <!-- Trae tus propios estilos desde el archivo estilos.css -->
+    <link rel="stylesheet" href="estilos.css">
+    <!-- El dibujito pequeño que sale arriba en la pestaña del navegador -->
+    <link rel="icon" href="icono-images-removebg-preview.png">
+  </head>
+  <body>
+
+    <!-- VIDEO DE FONDO -->
+    <video class="video-background" autoplay muted loop>
+      <source src="videofondo_jVSSOeGe.mp4" type="video/mp4">
+      Tu navegador no soporta videos en HTML5.
+    </video>
+
+    <!-- NAVBAR DE NAVEGACIÓN -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+      <div class="container-fluid">
+        <a class="navbar-brand fw-bold text-warning" href="#">🏀 BÁSQUETBOL</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item"><a class="nav-link" href="#historia">Historia</a></li>
+            <li class="nav-item"><a class="nav-link" href="#galeria">Galería</a></li>
+            <li class="nav-item"><a class="nav-link" href="#posiciones">Posiciones & Leyendas</a></li>
+            <li class="nav-item"><a class="nav-link" href="#contacto">Contacto</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- CONTENEDOR PRINCIPAL -->
+    <!-- div sirve como una caja transparente para agrupar elementos -->
+    <div class="container py-3">
+      
+      <!-- HEADER / TÍTULO PRINCIPAL -->
+      <header class="header-baloncesto text-center py-3 rounded mb-4 animacion-titulo">
+        <h1 class="h3 m-0">BÁSQUETBOL - HISTORIA Y DATOS</h1>
+      </header>
+
+      <!-- SECCIÓN 1: HISTORIA, CARRUSEL Y FORMULARIO -->
+      <section id="historia" class="row g-4 mb-5">
+        
+        <!-- Párrafo de historia -->
+        <div class="col-12 col-md-4">
+          <h2 class="h5 text-warning mb-3">Origen e Historia</h2>
+          <p class="text-light">El baloncesto fue inventado en diciembre de 1891 por James Naismith en la YMCA de Springfield, Massachusetts, como un juego bajo techo para el invierno enfocado en la agilidad y el control del balón antes que en la fuerza física. En aquel primer partido usó dos cestas de melocotones fijadas a 3,05 metros de altura, una medida que se mantiene hasta hoy, aunque el equipamiento pronto evolved: en 1893 se adoptaron los aros de metal y en 1906 las redes abiertas para agilizar el juego. Su impacto internacional creció rápidamente con la creación de la FIBA en 1932 y su inclusión como deporte olímpico en Berlín 1936.</p>
+        </div>
+
+        <!-- CARRUSEL DE IMÁGENES -->
+        <!-- Tu caja con la clase especial col-122 para acomodar la galería -->
+        <div class="col-122 col-md-4" id="galeria">
+          <h2 class="h5 text-warning mb-3">Galería</h2>
+          <div class="carousel slide" id="carousel-baloncesto" data-bs-ride="carousel">
+            
+            <!-- Las rayitas de abajo para cambiar de foto -->
+            <div class="carousel-indicators">
+              <button class="active" type="button" data-bs-target="#carousel-baloncesto" data-bs-slide-to="0" aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#carousel-baloncesto" data-bs-slide-to="1" aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#carousel-baloncesto" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+            
+            <!-- Aquí van las fotos que se van pasando -->
+            <div class="carousel-inner rounded shadow">
+              <div class="carousel-item active">
+                <img class="d-block w-100" src="baloncesto-historia-curiosidades.jpg" alt="Jugador encestando">
+                <div class="carousel-caption d-none d-md-block">
+                  <h3 class="h6">Motivación</h3>
+                  <p class="small">El éxito se construye dominando cada drible.</p>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img class="d-block w-100" src="images-2008.jpg" alt="Entrenamiento de baloncesto">
+                <div class="carousel-caption d-none d-md-block">
+                  <h3 class="h6">Destreza</h3>
+                  <p class="small">Agilidad y visión táctica en cada jugada.</p>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img class="d-block w-100" src="istockphoto-1300135275-612x612.jpg" alt="Balón de básquetbol y aro">
+                <div class="carousel-caption d-none d-md-block">
+                  <h3 class="h6">Pasión</h3>
+                  <p class="small">Conecta perfectamente con la cancha.</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Flechas a la izquierda y derecha para pasar las fotos -->
+            <button class="carousel-control-prev" type="button" data-bs-target="#carousel-baloncesto" data-bs-slide-to="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Anterior</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carousel-baloncesto" data-bs-slide-to="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Siguiente</span>
+            </button>
+          </div>
+        </div>
+
+        <!-- FORMULARIO -->
+        <!-- Tu caja con la clase especial col-123 para acomodar el formulario -->
+        <div class="col-123 col-md-4">
+          <!-- form es la caja que encierra todas las preguntas o campos para llenar -->
+          <form class="p-3 border rounded bg-light shadow" action="#">
+            <h2 class="h5 text-dark mb-3 text-center">formulario</h2>
+            
+            <!-- Campo para que escriban el nombre -->
+            <div class="mb-2">
+              <label class="form-label mb-1" for="formNombre">Nombre Completo</label>
+              <!-- input crea la casilla blanca para escribir -->
+              <input class="form-control" type="text" placeholder="Tu nombre" id="formNombre" required>
+            </div>
+            
+            <!-- Campo para el correo -->
+            <div class="mb-2">
+              <label class="form-label mb-1" for="formEmail">Correo electrónico</label>
+              <input class="form-control" type="email" placeholder="correo@ejemplo.com" id="formEmail" required>
+            </div>
+            
+            <!-- Botón de enviar -->
+            <button class="btn btn-primary w-100 mt-2 btn-interactivo" type="submit">Enviar</button>
+          </form>
+        </div>
+      </section>
+
+      <!-- SECCIÓN 2: POSICIONES Y LEYENDAS -->
+      <section id="posiciones" class="row g-4 mb-5">
+        <div class="col-12">
+          <h2 class="h5 text-warning mb-2">Posiciones y Leyendas del Baloncesto</h2>
+        </div>
+        <!-- Foto de las posiciones -->
+        <div class="col-12 col-md-6">
+          <img class="img-fluid rounded shadow" src="diferente-explicación-de-todas-las-posiciones-en-el-básquetbol.avif" alt="Explicación de posiciones en el básquetbol">
+        </div>
+        <!-- Tarjeta con la información de los jugadores -->
+        <div class="col-12 col-md-6">
+          <div class="card h-100 shadow">
+            <div class="card-body">
+              <p class="card-text">Michael Jordan es considerado de forma casi unánime como el mejor jugador de baloncesto de toda la historia gracias a su dominio absoluto en los años 90, donde lideró a los Chicago Bulls a ganar seis campeonatos de la NBA sin perder jamás una final, acumulando además seis premios MVP de las Finales. Aunque leyendas contemporáneas como LeBron James —el máximo anotador de todos los tiempos y ejemplo de una longevidad sin precedentes— o gigantes históricos como  Kobe Bryant completan el debate moderno, la feroz mentalidad competitiva de Jordan, su perfección en los momentos decisivos lo mantienen en la cima del baloncesto mundial.</p>
+              <p class="card-text">Jaime Echenique es considerado el mejor jugador de baloncesto de Colombia por su hito histórico de ser el primer y único colombiano en debutar en la NBA con los Washington Wizards. Sin embargo, comparte este reconocimiento con Juan Diego Tello, calificado por los expertos como el basquetbolista más completo y exitoso del país debido a su brillante carrera de más de una década ganando títulos en ligas de élite de Europa, y con Brian Angola, un escolta de enorme talento técnico que ha brillado en el baloncesto universitario de Estados Unidos.</p>
+            </div>
+            <div class="card-footer text-muted small">
+              Estados Unidos y Yugoslavia lideran los mundiales con 5 títulos cada uno, seguidos por la Unión Soviética (3), España (2) y Brasil (2).
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- PIE DE PÁGINA (Footer) -->
+      <footer class="pie-pagina py-4" id="contacto">
+        <div class="columna">
+          <h2 class="h6">Contacto</h2>
+          <p class="mb-0">300 123 4567</p>
+        </div>
+        <div class="columna">
+          <h2 class="h6">Ubicación</h2>
+          <p class="mb-0">Bogotá, Colombia</p>
+        </div>
+        <div class="columna">
+          <h2 class="h6">Redes</h2>
+          <a href="#">Facebook</a> | <a href="#">Instagram</a>
+        </div>
+        <div class="columna">
+          <h2 class="h6">Políticas</h2>
+          <a href="#">Privacidad</a>
+        </div>
+      </footer>
+    </div>
+
+    <!-- INDICADOR RESPONSIVO FLOTANTE -->
+    <!-- Muestra en pantalla si estás viendo la página como celular, tablet o computador -->
+    <div class="indicador">
+      <samp class="celular">📱 celular (&lt; 600px)</samp>
+      <samp class="tablet"> 📟 tablet (&lt; 900px)</samp>
+      <samp class="computador"> 💻 computador (&gt; 1024px)</samp>
+    </div>
+
+    <!-- SCRIPT DE BOOTSTRAP -->
+    <!-- Código JavaScript necesario para que las cosas interactivas funcionen al hacer clic -->
+    <script src="./bootstrap.bundle.min.js"></script>
+  </body>
+</html>
